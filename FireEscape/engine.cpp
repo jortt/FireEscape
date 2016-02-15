@@ -17,6 +17,7 @@
 #include "main_menu_state.h"
 #include "placement_state.h"
 #include "simulation_state.h"
+#include "game_select_state.h"
 
 using namespace std;
 
@@ -194,11 +195,12 @@ bool Engine::init() {
 	music[SoundId::CLICK1] = Mix_LoadMUS("277651__coral - island - studios__button - 4.mp3");
 	music[SoundId::CLICK2] = Mix_LoadMUS("156859__multimax2121__button - 1.wav");*/
 
+	states[StateId::GAME_SELECT] = new GameSelectState{};
 	states[StateId::MAIN_MENU] = new MainMenuState{};
 	states[StateId::PLACEMENT] = new PlacementState{};
 	states[StateId::SIMULATION] = new SimulationState{};
 
-	activeState = StateId::MAIN_MENU;
+	activeState = StateId::GAME_SELECT;
 	states[activeState]->enter();
 
 	// Hard-coded ftw

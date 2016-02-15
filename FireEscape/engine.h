@@ -34,6 +34,7 @@ public:
 
 	enum class StateId
 	{
+		GAME_SELECT,
 		MAIN_MENU,
 		PLACEMENT,
 		SIMULATION
