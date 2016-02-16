@@ -135,6 +135,7 @@
     <ClCompile Include="game_select_state.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="main_menu_state.cpp" />
+    <ClCompile Include="pacman_state.cpp" />
     <ClCompile Include="person.cpp" />
     <ClCompile Include="tinyxml2.cpp" />
     <ClCompile Include="tmxparser.cpp" />
@@ -156,6 +157,7 @@
     <ClInclude Include="game_select_state.h" />
     <ClInclude Include="game_state.h" />
     <ClInclude Include="main_menu_state.h" />
+    <ClInclude Include="pacman_state.h" />
     <ClInclude Include="person.h" />
     <ClInclude Include="tinyxml2.h" />
     <ClInclude Include="tmxparser.h" />

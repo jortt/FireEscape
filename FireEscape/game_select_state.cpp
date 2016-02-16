@@ -13,6 +13,23 @@ void GameSelectState::update(vector<SDL_Event> input) {
 
 	for (auto in : input) {
 		if (in.type == SDL_KEYDOWN) {
+			switch (in.key.keysym.sym)
+			{
+			case SDLK_ESCAPE:
+				e.quit();
+				break;
+			case SDLK_UP:
+			case SDLK_DOWN:
+				toggleGame();
+				break;
+			case SDLK_RETURN:
+				if (selected_game_ == SelectedGame::FireEscape)
+					e.setState(Engine::StateId::MAIN_MENU);
+				else
+					e.setState(Engine::StateId::PACMAN);
+				break;
+			}
+			/*
 			if (in.key.keysym.sym == SDLK_ESCAPE) {
 				e.quit();
 			}
@@ -22,6 +39,7 @@ void GameSelectState::update(vector<SDL_Event> input) {
 			else if (in.key.keysym.sym == SDLK_DOWN) {
 				toggleGame();
 			}
+			*/
 		}
 	}
 }

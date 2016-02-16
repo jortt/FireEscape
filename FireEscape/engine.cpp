@@ -18,6 +18,7 @@
 #include "placement_state.h"
 #include "simulation_state.h"
 #include "game_select_state.h"
+#include "pacman_state.h"
 
 using namespace std;
 
@@ -199,6 +200,7 @@ bool Engine::init() {
 	states[StateId::MAIN_MENU] = new MainMenuState{};
 	states[StateId::PLACEMENT] = new PlacementState{};
 	states[StateId::SIMULATION] = new SimulationState{};
+	states[StateId::PACMAN] = new PacmanState{};
 
 	activeState = StateId::GAME_SELECT;
 	states[activeState]->enter();

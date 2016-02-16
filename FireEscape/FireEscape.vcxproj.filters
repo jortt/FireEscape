@@ -60,6 +60,9 @@
     <ClCompile Include="game_select_state.cpp">
       <Filter>Source Files\core</Filter>
     </ClCompile>
+    <ClCompile Include="pacman_state.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="libpng16-16.dll" />
@@ -110,6 +113,9 @@
       <Filter>Source Files\util</Filter>
     </ClInclude>
     <ClInclude Include="game_select_state.h">
+      <Filter>Source Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="pacman_state.h">
       <Filter>Source Files\core</Filter>
     </ClInclude>
   </ItemGroup>

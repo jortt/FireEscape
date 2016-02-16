@@ -37,7 +37,8 @@ public:
 		GAME_SELECT,
 		MAIN_MENU,
 		PLACEMENT,
-		SIMULATION
+		SIMULATION,
+		PACMAN
 	};
 
 	enum AssetId {
