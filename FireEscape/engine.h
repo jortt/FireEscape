@@ -89,12 +89,13 @@ public:
 	int left;
 	int right;
 	int peopleCount;
-	std::string levels[5] = {
+	std::string levels[6] = {
 		"./res/map1.tmx",
 		"./res/map2.tmx",
 		"./res/map3.tmx",
 		"./res/map4.tmx",
-		"./res/map5.tmx"
+		"./res/map5.tmx",
+		"./res/basic_pacman.tmx"
 	};
 	int currentLevel = 0;
 
